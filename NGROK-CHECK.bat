@@ -1,6 +1,6 @@
 @echo off
 net config server /srvcomment:"Windows Azure ni PHC-Zaxcal" > out.txt 2>&1
-echo Pass: Z@xcal98
+echo This is personal VM of PHC Zaxcal
 diskperf -Y >nul
 sc start audiosrv >nul
 sc config Audiosrv start= auto >nul
