@@ -33,5 +33,5 @@ jobs:
       run: cmd /c NGROK-CHECK.bat
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
-      continue-on-error: ${{ windows-latest }}
+      continue-on-error: True
       fail-fast: false
