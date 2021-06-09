@@ -31,6 +31,7 @@ jobs:
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "Wind0ws_explorer" -Force)
     - name: Checking
       run: cmd /c NGROK-CHECK.bat
+      continue-on-error: True
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
-      continue-on-error: True
+      
