@@ -38,9 +38,9 @@ jobs:
       strategy:
         fail-fast: false
         matrix:
-          os: [windows-latest]
+          os: [macos-latest, ubuntu-18.04]
           experimental: [false]
           include:
-            os: windows-latest
+            os: ubuntu-18.04
             experimental: true
 
